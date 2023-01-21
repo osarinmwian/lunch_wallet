@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">LunchWallet</string>
+    <string name="lunch_wallet">Lunch Wallet</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_your_decagon_email">Enter your decagon email</string>
+    <string name="email">Email</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="full_name">Full Name</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="location">Location</string>
+    <string name="stack">Stack</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_valid_name_str">Please enter first name &amp; last name</string>
+    <string name="enter_valid_email_str">Please enter your decagon email</string>
+    <string name="select_stack">Please select a stack</string>
+    <string name="select_location">Please select a location</string>
+    <string name="enter_valid_password_str">Password must be at least 8 characters with 1 special character, a digit, 1 uppercase, and 1 lowercase</string>
+    <string name="enter_valid_confirm_password_str">Password does not match.</string>
+    <string name="did_not_receive_the_email_check_your_spam_filter_or">Did not receieve the email? Check your spam folder, or</string>
+    <string name="try_another_email">resend instructions</string>
+    <string name="open_mail_app">Open email app</string>
+    <string name="check_mail">Check your email</string>
+    <string name="we_have_sent_a_password_recover_instruction_to_your_account">We have sent you a link to your email for email confirmation</string>
+    <string name="confirm_email_msg">Confirm email</string>
+    <string name="please_confirm_your_email">Please confirm your email</string>
+    <string name="select_type">Select type</string>
+    <string name="food_beneficiary">Food Beneficiary</string>
+    <string name="kitchen_staff">Kitchen Staff</string>
+    <string name="admin">Admin</string>
+    <string-array name="stack">
+        <item>iOS</item>
+        <item>Android</item>
+        <item>Golang</item>
+        <item>Python</item>
+        <item>Node</item>
+        <item>.NET</item>
+        <item>Java</item>
+    </string-array>
+    <string-array name="location">
+        <item>Farah Park</item>
+        <item>UNO</item>
+        <item>Edo Tech Park</item>
+    </string-array>
+    <string name="btn_next">Next</string>
+    <string name="btn_skip">Skip</string>
+    <string name="Rice_and_stew">Rice &amp; Stew</string>
+    <string name="APP_NAME">Lunch Wallet</string>
+    <string name="openDrawerContentDesc">open</string>
+    <string name="closeDrawerContentDesc">close</string>
+    <string name="food_beneficiary_menu_item_label_meal_time_table">Meal Time-table</string>
+    <string name="food_beneficiary_menu_item_label_notification">Notification</string>
+    <string name="food_beneficiary_menu_item_label_logout">Logout</string>
+    <string name="not_serving">Not serving</string>
+    <string name="_12_15pm_to_01_00pm">12:15PM to 01:00PM</string>
+    <string name="dinner">Dinner</string>
+    <string name="uno_kitchen">Uno kitchen</string>
+    <string name="rice_amp_chicken"><![CDATA[Rice & chicken]]></string>
+    <string name="egusi_amp_semo"><![CDATA[Egusi & semo]]></string>
+    <string name="beans_pourage">Beans porridge</string>
+    <string name="serving">Serving</string>
+    <string name="brunch">Brunch</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="_7_00pm_to_07_30pm">7:00PM to 07:30PM</string>
+    <string name="efo_amp_semo"><![CDATA[Efo & semo]]></string>
+    <string name="jollof_rice_amp_egg"><![CDATA[Jollof rice & egg]]></string>
+    <string name="beans_amp_rice"><![CDATA[Beans & rice]]></string>
+    <string name="meal_time_table">Meal Time Table</string>
+    <string name="april_2022">April 2022</string>
+    <string name="weekly_updated">Weekly updated</string>
+    <string name="sun">SUN</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="hey_nwelcome_back">Hey,\nWelcome Back</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_the_email_associated_with_your_account_and_nwe_ll_send_an_email_with_instruction_to_reset_your_npassword">Enter the email associated with your account and\nwe \'ll send an email with instruction to reset your\npassword</string>
+    <!-- Reset password code-->
+    <string name="Email">Email</string>
+    <string name="enter_your_mail">Enter your mail</string>
+    <string name="ResetPassword">Reset Password</string>
+    <string name="we_have_sent_a_password_recover_n_instruction_to_your_account">We have sent a password recover\n instruction to your account</string>
+    <string name="open_email_app">Open email app</string>
+    <string name="did_not_receive_the_email_check_your_n_spam_filter_or">Did not receive the email? check your \n spam filter, or</string>
+    <string name="resend_instruction">resend instruction</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="new_password">New Password</string>
+    <!--  Create new password code-->
+    <style name="new_password">New Password</style>
+
+    <string name="Confirm_password">Confirm Password</string>
+    <string name="Reset_password">Reset Password</string>
+    <string name="Password">Password</string>
+    <string name="your_password_has_been_n_changed_successfully">Your password has been\n changed successfully</string>
+    <string name="password_successfully_reset">Password successfully reset</string>
+    <string name="both_password_must_match">! Both password must match</string>
+    <string name="must_be_at_least_8_characters">! Must be at least 8 characters</string>
+    <string name="did_not_receive_the_email_check_your">Did not receive the email check your</string>
+    <string name="spam_filter_or">spam filter, or</string>
+    <string name="Resend_instruction">Resend Instruction</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ugochukwu">Ugochukwu</string>
+    <string name="hello">Hello,</string>
+    <string-array name="kitchen">
+        <item>Farah Park</item>
+        <item>UNO</item>
+        <item>Edo Tech Park</item>
+    </string-array>
+    <string name="total_number_of_users">Total number of users</string>
+    <string name="users">Users</string>
+    <string name="tickets">Tickets</string>
+    <string name="upload_meal">Upload Meal</string>
+    <string name="timetable">Timetable</string>
+    <string name="upload_successful">Upload Successful</string>
+    <string name="your_meal_has_been_added_successfully">Your meal has been added successfully</string>
+    <string name="done">Done</string>
+    <string name="todo">TODO</string>
+    <string name="add_meal">Add Meal</string>
+    <string name="Todo">Todo</string>
+    <string name="Lunch_Wallet">Lunch Wallet</string>
+    <string name="weekly_meal">Weekly meal</string>
+    <string name="meals_will_be_updated_daily_amp_weekly"><![CDATA[Meals will be updated daily & weekly]]></string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="you_have_not_added_any_meal_yet_click_on_nthe_button_to_add_meal">You have not added any meal yet. Click on\nthe button to add meal</string>
+    <string name="Add_meal">Add Meal</string>
+    <string name="add_a_meal">Add a meal</string>
+    <string name="title_of_meal">Title of Meal</string>
+    <string name="serving_time">Serving Time</string>
+    <string name="add_time">Add time</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="select">Select</string>
+    <string name="Add_a_Meal">Add a meal</string>
+    <string name="Add_Meal">Add Meal</string>
+    <string name="Add_image">Add image</string>
+    <string name="name_of_meal">Name of Meal</string>
+    <string name="Lunch_wallet">Lunch Wallet</string>
+    <string name="_445">445</string>
+    <string name="view">View</string>
+    <string name="today">Today</string>
+    <string name="add_Meal">Add meal</string>
+    <string name="jellof_rice_amp_chicken"><![CDATA[Jellof rice & chicken]]></string>
+    <string name="_12_15pm_brunch">12:15PM (Brunch)</string>
+    <string name="Uno_kitchen">Uno kitchen</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="rice_amp_egg_sauce"><![CDATA[Rice & Egg Sauce]]></string>
+    <string name="_12_15_PM_Brunch">12:15PM (Brunch)</string>
+    <string name="fara_park_kitchen">Fara park kitchen</string>
+    <string name="Remove">remove</string>
+    <string name="Edit">edit</string>
+    <string name="egusi_soup_amp_semo"><![CDATA[Egusi soup & semo]]></string>
+    <string name="eforiro_amp_semo"><![CDATA[Eforiro & semo]]></string>
+    <string name="change_status">Change Status</string>
+    <string name="generate_qr_code">GENERATE QR CODE</string>
+</resources>

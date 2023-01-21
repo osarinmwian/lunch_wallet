@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".kitchenstaff.dashboard.KitchenStaffDashBoardFragment">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/uploadMealFragment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/uploadMealFragment_logo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="start"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cuisine"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <TextView
+                    android:id="@+id/uploadMealFragment_lunch_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/manrope_extrabold"
+                    android:text="@string/Lunch_Wallet"
+                    android:textColor="@color/black"
+                    android:textFontWeight="800"
+                    tools:ignore="UnusedAttribute" />
+
+                <ImageView
+                    android:id="@+id/uploadMealFragment_image"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_ellipse"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/Layout_background"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/hello"
+                android:fontFamily="@font/inter"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:textColor="@color/Today_color"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ugochukwu"
+                android:layout_marginHorizontal="16dp"
+                android:textFontWeight="600"
+                android:fontFamily="@font/inter"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/Today_color"
+                tools:ignore="UnusedAttribute" />
+
+    <LinearLayout
+        android:id="@+id/cardview_lo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kitchen_staff_users_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:cardElevation="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/user_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ic_users"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/user_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_iv"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/users"
+                    android:textFontWeight="500"
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kitchen_staff_change_status_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:cardElevation="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/change_status__iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ic_bag"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/change_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/change_status__iv"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/change_status"
+                    android:textFontWeight="500"
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cardview_lo2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/cardview_lo1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kitchen_staff_meal_time_table_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/user_timetable_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ic_bag"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/user_timetable_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_timetable_iv"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/timetable"
+                    android:textFontWeight="500"
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/user_upload_meal_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ic_food"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/user_upload_plate_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_upload_meal_iv"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="73dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ic_plate"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/user_upload_meal_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_upload_plate_iv"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/upload_meal"
+                    android:textFontWeight="500"
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

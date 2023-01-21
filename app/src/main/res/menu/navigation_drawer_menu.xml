@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/foodBeneficiaryDashboardFragment"
+            android:title="@string/food_beneficiary_menu_item_label_meal_time_table"
+            android:icon="@drawable/ic_menu_meal_plate"
+            />
+
+        <item
+            android:id="@+id/notificationsScreenFragment"
+            android:title="@string/food_beneficiary_menu_item_label_notification"
+            android:icon="@drawable/ic_menu_notification"/>
+
+        <item
+            android:id="@+id/menu_item_logout"
+            android:title="@string/food_beneficiary_menu_item_label_logout"
+            android:icon="@drawable/ic_menu_sign_out"/>
+    </group>
+</menu>

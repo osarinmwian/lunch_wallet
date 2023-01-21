@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".common.login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/loginFragment_logo_Tv"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="56dp"
+            app:srcCompat="@drawable/ic_launch_wallet_logo" />
+
+        <TextView
+            android:id="@+id/loginFragment_lunch_wallet_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="68dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/lunch_wallet"
+            android:textColor="@color/black"
+            android:textFontWeight="800"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/loginFragment_welcome_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/hey_nwelcome_back"
+        android:textColor="@color/black"
+        android:textFontWeight="800"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/loginFragment_email_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginFragment_email_Til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/text_input_box_stroke_color"
+        android:layout_marginBottom="10dp"
+        app:helperTextTextColor="@color/helper_text_color"
+        app:hintEnabled="false">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/loginFragment_email_Et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_regular"
+        android:hint="@string/enter_your_email_address"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp"
+        android:textFontWeight="400"
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loginFragment_password_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/Password"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginFragment_password_Til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/text_input_box_stroke_color"
+        app:hintEnabled="false"
+        app:helperTextTextColor="@color/helper_text_color"
+        app:passwordToggleEnabled="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/loginFragment_password_Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="@string/password"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            android:paddingBottom="15dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="15dp"
+            android:inputType="textPassword"
+            app:passwordToggleEnabled="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loginFragment_Forgotpassword_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/forgot_password"
+        android:textColor="@color/loginbutton"
+        android:textFontWeight="400"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/LoginErrorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E53935" />
+
+    <Button
+        android:id="@+id/loginFragment_button"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/loginbutton"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loginFragment_No_account_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/loginFragment_signup_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/sign_up"
+            android:textColor="@color/loginbutton"
+            android:textFontWeight="700"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+

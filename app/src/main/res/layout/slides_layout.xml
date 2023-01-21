@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/my_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:lineHeight="32.78sp"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/textPrimaryColor"
+        android:textFontWeight="800"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/my_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_title"
+        android:text="This is a dummy text description of the launch wallet app. The real text will be generated and replaced here."
+        android:textAlignment="center"
+        android:layout_marginTop="40sp"
+        android:textFontWeight="400"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="14sp"
+        android:lineHeight="20sp"/>
+
+    <ImageView
+        android:id="@+id/my_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/onboarding_screen_one" />
+</RelativeLayout>

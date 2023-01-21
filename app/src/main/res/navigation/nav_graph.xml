@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.lunchwallet.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/onboardingScreenFragment"
+        android:name="com.example.lunchwallet.common.onboarding.ui.onboarding.OnboardingScreenFragment"
+        android:label="fragment_onboarding_screen"
+        tools:layout="@layout/fragment_onboarding_screen" >
+        <action
+            android:id="@+id/action_onboardingScreenFragment_to_landingPageFragment"
+            app:destination="@id/landingPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/landingPageFragment"
+        android:name="com.example.lunchwallet.common.onboarding.ui.landingpage.LandingPageFragment"
+        android:label="fragment_landing_page"
+        tools:layout="@layout/fragment_landing_page" >
+        <action
+            android:id="@+id/action_landingPageFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.signup.ui.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_checkMailFragment"
+            app:destination="@id/checkMailFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkMailFragment"
+        android:name="com.example.lunchwallet.common.checkmail.CheckMailFragment"
+        android:label="fragment_check_mail"
+        tools:layout="@layout/fragment_check_mail" >
+        <action
+            android:id="@+id/action_checkMailFragment_to_confirmMailFragment"
+            app:destination="@id/confirmMailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmMailFragment"
+        android:name="com.example.lunchwallet.common.confirmMail.ConfirmMailFragment"
+        android:label="fragment_confrim_mail_frgament"
+        tools:layout="@layout/fragment_confrim_mail_frgament" />
+    <fragment
+        android:id="@+id/selectTypeFragment"
+        android:name="com.example.lunchwallet.common.selectType.SelectTypeFragment"
+        android:label="fragment_select_type"
+        tools:layout="@layout/fragment_select_type" >
+        <action
+            android:id="@+id/action_selectTypeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_selectTypeFragment_to_kitchenStaffSignUpFragment"
+            app:destination="@id/kitchenStaffSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsScreenFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.notifications.ui.NotificationsScreenFragment"
+        android:label="fragment_notifications_screen"
+        tools:layout="@layout/fragment_notifications_screen" />
+    <fragment
+        android:id="@+id/kitchenStaffMealTimeTableFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.mealtimetable.KitchenStaffMealTimeTableFragment"
+        android:label="fragment_kitchen_staff_dash_board"
+        tools:layout="@layout/fragment_kitchen_staff_meal_time_table" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.lunchwallet.common.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_kitchenStaffDashBoardFragment2"
+            app:destination="@id/kitchenStaffDashBoardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_foodBeneficiaryDashboardFragment"
+            app:destination="@id/foodBeneficiaryDashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_selectTypeFragment"
+            app:destination="@id/selectTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.example.lunchwallet.common.resetpassword.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_checkMailResetPasswordFragment"
+            app:destination="@id/checkMailResetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewPasswordFragment"
+        android:name="com.example.lunchwallet.common.resetpassword.CreateNewPasswordFragment"
+        android:label="fragment_create_new_password"
+        tools:layout="@layout/fragment_create_new_password" >
+        <action
+            android:id="@+id/action_createNewPasswordFragment_to_successModalFragment"
+            app:destination="@id/successModalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkMailResetPasswordFragment"
+        android:name="com.example.lunchwallet.common.resetpassword.CheckMailResetPasswordFragment"
+        android:label="fragment_check_mail_reset_password"
+        tools:layout="@layout/fragment_check_mail_reset_password" >
+        <action
+            android:id="@+id/action_checkMailResetPasswordFragment_to_createNewPasswordFragment"
+            app:destination="@id/createNewPasswordFragment" />
+        <action
+            android:id="@+id/action_checkMailResetPasswordFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitchenStaffSignUpFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.signup.KitchenStaffSignUpFragment"
+        android:label="fragment_kitchen_staff_sign_up"
+        tools:layout="@layout/fragment_kitchen_staff_sign_up" >
+        <action
+            android:id="@+id/action_kitchenStaffSignUpFragment_to_checkMailFragment"
+            app:destination="@id/checkMailFragment" />
+        <action
+            android:id="@+id/action_kitchenStaffSignUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/optionMealFragment"
+        android:name="com.example.lunchwallet.admin.uploadmeals.ui.OptionMealBottomSheetDialogFragment"
+        android:label="fragment_option_meal"
+        tools:layout="@layout/fragment_option_meal" >
+        <action
+            android:id="@+id/action_optionMealFragment_to_messageAlertFragment"
+            app:destination="@id/messageAlertFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/messageAlertFragment"
+        android:name="com.example.lunchwallet.admin.uploadmeals.ui.MessageAlertFragment"
+        android:label="fragment_message_alert"
+        tools:layout="@layout/fragment_message_alert" />
+    <fragment
+        android:id="@+id/uploadMealFragment"
+        android:name="com.example.lunchwallet.admin.uploadmeals.ui.UploadMealFragment"
+        android:label="UploadMealFragment" >
+        <action
+            android:id="@+id/action_uploadMealFragment_to_optionMealFragment"
+            app:destination="@id/optionMealFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.lunchwallet.admin.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_uploadMealFragment"
+            app:destination="@id/uploadMealFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_mealTimeTableFragment"
+            app:destination="@id/mealTimeTableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealTimeTableFragment"
+        android:name="com.example.lunchwallet.admin.mealtimetable.MealTimeTableFragment"
+        android:label="fragment_meal_time_table"
+        tools:layout="@layout/fragment_meal_time_table" />
+    <fragment
+        android:id="@+id/kitchenStaffDashBoardFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.dashboard.KitchenStaffDashBoardFragment"
+        android:label="fragment_kitchen_staff_dashboard"
+        tools:layout="@layout/fragment_kitchen_staff_dashboard" >
+        <action
+            android:id="@+id/action_kitchenStaffDashBoardFragment_to_kitchenStaffMealTimeTableFragment"
+            app:destination="@id/kitchenStaffMealTimeTableFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/successModalFragment"
+        android:name="com.example.lunchwallet.common.resetpassword.SuccessModalFragment"
+        android:label="fragment_success_modal"
+        tools:layout="@layout/fragment_success_modal" />
+    <fragment
+        android:id="@+id/foodBeneficiaryDashboardFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.dashboard.FoodBeneficiaryDashboardFragment"
+        android:label="fragment_food_beneficiary_dashboard"
+        tools:layout="@layout/fragment_food_beneficiary_dashboard" >
+        <action
+            android:id="@+id/action_foodBeneficiaryDashboardFragment_to_notificationsScreenFragment"
+            app:destination="@id/notificationsScreenFragment" />
+    </fragment>
+</navigation>

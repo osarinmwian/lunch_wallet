@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-xxxhdpi/btn_bg_shape_filled.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/shape.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/border.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/btn_bg_shape.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/btn_bg_shape_outline.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/circle_shape.xml" value="0.237" />
+        <entry key="app/src/main/res/drawable/current_day_background.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/ic_angle_left.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_arrow.xml" value="0.17" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right.xml" value="0.212" />
+        <entry key="app/src/main/res/drawable/ic_bag.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/ic_cuisine.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_ellipse_9.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_food.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/ic_frame.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/ic_frame_40.xml" value="0.2285" />
+        <entry key="app/src/main/res/drawable/ic_hamburger.xml" value="0.2385" />
+        <entry key="app/src/main/res/drawable/ic_icons.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/ic_ladder.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/ic_launch_wallet_logo.xml" value="0.17" />
+        <entry key="app/src/main/res/drawable/ic_launch_wallet_splash_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.17" />
+        <entry key="app/src/main/res/drawable/ic_line1.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/ic_message_icon.xml" value="0.17" />
+        <entry key="app/src/main/res/drawable/ic_plate.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/ic_rectangle.xml" value="0.121" />
+        <entry key="app/src/main/res/drawable/ic_uploadmeal.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/ic_users.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/ic_vector.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/ic_view.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/item_separator.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/login_input_background.xml" value="0.1355" />
+        <entry key="app/src/main/res/drawable/reset_password_success_modal_background.xml" value="0.2345" />
+        <entry key="app/src/main/res/drawable/roundcorner_radius.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/shape2.xml" value="0.2065" />
+        <entry key="app/src/main/res/drawable/view_group_border.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/view_group_border_oval.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/view_group_border_oval_v2.xml" value="0.133" />
+        <entry key="app/src/main/res/layout-v28/slides_layout.xml" value="0.4661458333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2331288343558282" />
+        <entry key="app/src/main/res/layout/activity_onboarding_screen.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/calender_cell.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/layout/fragment_account_lunch_wallet.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_admin_upload_meal.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_admin_upload_meal_recycler_view.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_check_mail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_check_mail_password.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_check_mail_reset_password.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_confrim_mail_frgament.xml" value="0.2796875" />
+        <entry key="app/src/main/res/layout/fragment_create_new_password.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_dash_board_lunch_wallet.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.26268115942028986" />
+        <entry key="app/src/main/res/layout/fragment_food_beneficiary_dashboard.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_kitchen_staff_dash_board.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_kitchen_staff_dashboard.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_kitchen_staff_meal_time_table.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_kitchen_staff_sign_up.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_landing_page.xml" value="0.24739583333333334" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_meal_time_table.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_message_alert.xml" value="0.2484375" />
+        <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_onboarding_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_option_meal.xml" value="0.2484375" />
+        <entry key="app/src/main/res/layout/fragment_password_change_success_modal.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/layout/fragment_reset_password.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_select_type.xml" value="0.2796875" />
+        <entry key="app/src/main/res/layout/fragment_side_bar_menu.xml" value="0.21052631578947367" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_success_modal.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_upload_meal.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/kitchen_menu_list.xml" value="0.2484375" />
+        <entry key="app/src/main/res/layout/landing_page_meal_pager_item.xml" value="0.24739583333333334" />
+        <entry key="app/src/main/res/layout/location_list.xml" value="0.2796875" />
+        <entry key="app/src/main/res/layout/logout_confirmation.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/main_fragment.xml" value="0.4661458333333333" />
+        <entry key="app/src/main/res/layout/navigation_drawer_menu_header.xml" value="0.23974763406940064" />
+        <entry key="app/src/main/res/layout/sidebar_menu.xml" value="0.47206005004170143" />
+        <entry key="app/src/main/res/layout/sidebar_menu_header.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/slides_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.29375" />
+        <entry key="app/src/main/res/menu/navigation_drawer_menu.xml" value="0.29375" />
+        <entry key="app/src/main/res/menu/sidebar_menu.xml" value="0.12395833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

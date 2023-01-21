@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".foodbeneficiary.notifications.ui.NotificationsScreenFragment">
+
+    <LinearLayout
+        android:id="@+id/notification_back_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="#08000000"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Back"
+            android:textSize="14sp"
+            android:textColor="#21334F"
+            android:background="#00FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/notification_back_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notification_back_view" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Today"
+        android:textColor="@color/textPrimaryColor"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/notification_back_view"
+        app:layout_constraintTop_toBottomOf="@+id/notification_back_view" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_first_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FCFCFD"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 4, 2022"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/rice_and_stew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Rice_and_stew"
+                android:layout_marginTop="4sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/textPrimaryColor"
+                app:layout_constraintStart_toStartOf="@+id/date_picker"
+                app:layout_constraintTop_toBottomOf="@id/date_picker" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:15 pm"
+                android:textSize="12sp"
+                android:layout_marginTop="4sp"
+                app:layout_constraintStart_toStartOf="@+id/rice_and_stew"
+                app:layout_constraintTop_toBottomOf="@id/rice_and_stew" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Serving is Ongoing"
+                android:textFontWeight="400"
+                android:background="@drawable/shape2"
+                android:textColor="@color/textNotification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_second_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FCFCFD"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_first_view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/date_picker_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 4, 2022"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/rice_and_stew_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mary Rose updated time table"
+                android:layout_marginTop="4sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/textPrimaryColor"
+                app:layout_constraintStart_toStartOf="@+id/date_picker_2"
+                app:layout_constraintTop_toBottomOf="@id/date_picker_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:15 pm"
+                android:textSize="12sp"
+                android:layout_marginTop="4sp"
+                app:layout_constraintStart_toStartOf="@+id/rice_and_stew_2"
+                app:layout_constraintTop_toBottomOf="@id/rice_and_stew_2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_third_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FCFCFD"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_second_view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/date_picker_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 4, 2022"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/rice_and_stew_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You have recieved your meal"
+                android:layout_marginTop="4sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/textPrimaryColor"
+                app:layout_constraintStart_toStartOf="@+id/date_picker_3"
+                app:layout_constraintTop_toBottomOf="@id/date_picker_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:15 pm"
+                android:textSize="12sp"
+                android:layout_marginTop="4sp"
+                app:layout_constraintStart_toStartOf="@+id/rice_and_stew_3"
+                app:layout_constraintTop_toBottomOf="@id/rice_and_stew_3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/yesterday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Yesterday"
+        android:textColor="@color/textPrimaryColor"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/my_third_view" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_fourth_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FCFCFD"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yesterday">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/date_picker_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 4, 2022"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/rice_and_stew_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal Collected"
+                android:layout_marginTop="4sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/textPrimaryColor"
+                app:layout_constraintStart_toStartOf="@+id/date_picker_4"
+                app:layout_constraintTop_toBottomOf="@id/date_picker_4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:15 pm"
+                android:textSize="12sp"
+                android:layout_marginTop="4sp"
+                app:layout_constraintStart_toStartOf="@+id/rice_and_stew_4"
+                app:layout_constraintTop_toBottomOf="@id/rice_and_stew_4" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Recieved"
+                android:textFontWeight="400"
+                android:background="@drawable/shape2"
+                android:textColor="@color/textNotification"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

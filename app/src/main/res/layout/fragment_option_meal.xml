@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/Relative_background"
+    tools:context=".admin.uploadmeals.ui.OptionMealBottomSheetDialogFragment">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ModalBottomSheet"
+        android:background="@drawable/roundcorner_radius"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/optionMealFragment_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/todo"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_rectangle" />
+
+        <TextView
+            android:id="@+id/uploadMealFragment_add_meal_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/manrope_regular"
+            android:gravity="center"
+            android:text="@string/add_meal"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="14sp"
+            tools:ignore="UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/optionMealFragment_line_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="TODO"
+            android:padding="4dp"
+            android:src="@drawable/ic_line1"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:id="@+id/uploadMealFragment_name_of_meal_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/name_of_meal"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            tools:ignore="UnusedAttribute" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/uploadMealFragment_Title_of_meal_Container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/text_input_box_stroke_color"
+            app:hintEnabled="false">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uploadMealFragment_Title_of_meal_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_regular"
+                android:hint="@string/title_of_meal"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                tools:ignore="UnusedAttribute" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/optionMealFragment_serving_time_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/serving_time"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            tools:ignore="UnusedAttribute" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/optionMealFragment_add_time_Container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/text_input_box_stroke_color"
+            app:hintEnabled="false">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/optionMealFragment_add_time_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_regular"
+                android:hint="@string/add_time"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                tools:ignore="UnusedAttribute" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/optionMealFragment_Kitchen_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/kitchen"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            tools:ignore="UnusedAttribute" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/optionMealFragment_select_Container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/text_input_box_stroke_color"
+            app:hintEnabled="false">
+
+            <AutoCompleteTextView
+                android:id="@+id/kitchen_Auto_View"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/manrope_regular"
+                android:hint="@string/select"
+                android:inputType="none"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                tools:ignore="UnusedAttribute" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/optionMealFragment_add_image_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/Add_image"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            tools:ignore="UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/optionMealFragment_upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_frame"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/optionMealFragment_add_meal_Button"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/loginbutton"
+            android:fontFamily="@font/manrope_regular"
+            android:text="@string/Add_Meal"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            tools:ignore="UnusedAttribute" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".common.confirmMail.ConfirmMailFragment">
+
+    <LinearLayout
+        android:id="@+id/confirmFragment_layout"
+        android:layout_width="match_parent"
+        android:paddingTop="50dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_frame_40" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/manrope_extrabold"
+            android:layout_marginTop="20dp"
+            android:text="@string/confirm_email_msg"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/manrope_regular"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:text="@string/please_confirm_your_email"/>
+        <Button
+            android:id="@+id/confirmEmailFragment_confirmEmail_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/manrope_semibold"
+            android:backgroundTint="@color/theme_color"
+            android:layout_marginTop="20dp"
+            android:text="@string/confirm_email_msg"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/confirmEmail_progressBar"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
